@@ -55,7 +55,7 @@ const Services = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="lg:col-span-2 lg:row-span-2 relative group rounded-2xl overflow-hidden border border-gold-600/30 bg-dark-900 shadow-2xl"
+          className="lg:col-span-3 relative group rounded-2xl overflow-hidden border border-gold-600/30 bg-dark-900 shadow-2xl"
         >
           {/* Photorealistic Background for featured */}
           <div className="absolute inset-0 z-0">

@@ -4,7 +4,7 @@ import { ShieldCheck, Scale, Award } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center pt-28 lg:pt-20 overflow-hidden">
       {/* Background Decor */}
       <div className="absolute inset-0 bg-dark-900 z-0">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-dark-800 via-dark-900 to-black opacity-80"></div>

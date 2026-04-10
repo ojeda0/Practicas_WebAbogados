@@ -59,8 +59,8 @@ const Testimonials = () => {
       <div className="max-w-4xl mx-auto relative z-10 px-4 md:px-12">
         <div className="relative bg-dark-800/80 backdrop-blur-sm px-8 py-12 md:p-16 rounded-2xl shadow-2xl border border-dark-700 min-h-[320px] flex items-center justify-center">
             
-          <button onClick={prev} className="absolute left-0 md:-left-6 top-1/2 -translate-y-1/2 bg-dark-900 border border-gold-600/30 text-gold-500 hover:bg-gold-600 hover:text-dark-950 p-3 rounded-full transition-all z-20 shadow-xl" aria-label="Anterior">
-            <ChevronLeft size={24} />
+          <button onClick={prev} className="absolute -left-4 md:-left-6 top-1/2 -translate-y-1/2 bg-dark-900 border border-gold-600/30 text-gold-500 hover:bg-gold-600 hover:text-dark-950 p-2 md:p-3 rounded-full transition-all z-20 shadow-xl flex items-center justify-center" aria-label="Anterior">
+            <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
           </button>
 
           <AnimatePresence mode="wait">
@@ -70,7 +70,7 @@ const Testimonials = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
               transition={{ duration: 0.3 }}
-              className="w-full relative px-2"
+              className="w-full relative px-6 md:px-2"
             >
               <Quote size={60} className="absolute -top-4 -right-4 md:-top-4 md:-right-4 text-gold-600/20 pointer-events-none" />
               
@@ -89,8 +89,8 @@ const Testimonials = () => {
             </motion.div>
           </AnimatePresence>
 
-          <button onClick={next} className="absolute right-0 md:-right-6 top-1/2 -translate-y-1/2 bg-dark-900 border border-gold-600/30 text-gold-500 hover:bg-gold-600 hover:text-dark-950 p-3 rounded-full transition-all z-20 shadow-xl" aria-label="Siguiente">
-            <ChevronRight size={24} />
+          <button onClick={next} className="absolute -right-4 md:-right-6 top-1/2 -translate-y-1/2 bg-dark-900 border border-gold-600/30 text-gold-500 hover:bg-gold-600 hover:text-dark-950 p-2 md:p-3 rounded-full transition-all z-20 shadow-xl flex items-center justify-center" aria-label="Siguiente">
+            <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
           </button>
         </div>
         
