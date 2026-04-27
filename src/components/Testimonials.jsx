@@ -53,11 +53,12 @@ const Testimonials = () => {
       <div className="text-center mb-16 max-w-3xl mx-auto relative z-10">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-gold-500 uppercase tracking-wide mb-3">Reseñas</h2>
         <h3 className="text-xl md:text-2xl font-medium text-gray-200 mb-6">Lo que dicen nuestros clientes</h3>
+        <div className="h-1 w-20 bg-gold-600 mx-auto rounded-full mb-10"></div>
         <p className="text-gray-400">Nuestro mayor aval es el porcentaje de casos de éxito y la satisfacción de quienes confiaron en nosotros sus momentos más complicados.</p>
       </div>
 
       <div className="max-w-4xl mx-auto relative z-10 px-4 md:px-12">
-        <div className="relative bg-dark-800/80 backdrop-blur-sm px-8 py-12 md:p-16 rounded-2xl shadow-2xl border border-dark-700 min-h-[320px] flex items-center justify-center">
+        <div className="relative bg-dark-900/90 backdrop-blur-md px-8 py-12 md:p-16 rounded-2xl shadow-2xl border border-dark-700 min-h-[320px] flex items-center justify-center">
             
           <button onClick={prev} className="absolute -left-4 md:-left-6 top-1/2 -translate-y-1/2 bg-dark-900 border border-gold-600/30 text-gold-500 hover:bg-gold-600 hover:text-dark-950 p-2 md:p-3 rounded-full transition-all z-20 shadow-xl flex items-center justify-center" aria-label="Anterior">
             <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />

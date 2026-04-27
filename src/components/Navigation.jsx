@@ -14,12 +14,12 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Inicio', href: '#inicio' },
-    { name: 'Servicios', href: '#servicios' },
-    { name: 'Quiénes Somos', href: '#quienes-somos' },
-    { name: 'Equipo', href: '#equipo' },
-    { name: 'Reseñas', href: '#resenas' },
-    { name: 'Contacto', href: '#contacto' },
+    { name: 'Inicio', href: '/#inicio' },
+    { name: 'Servicios', href: '/#servicios' },
+    { name: 'Quiénes Somos', href: '/#quienes-somos' },
+    { name: 'Equipo', href: '/#equipo' },
+    { name: 'Reseñas', href: '/#resenas' },
+    { name: 'Contacto', href: '/#contacto' },
   ];
 
   return (
@@ -27,14 +27,14 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0 flex items-center">
-            <a href="#inicio" className="flex items-center gap-4 group">
+            <a href="/#inicio" className="flex items-center gap-4 group">
               <div className="relative h-14 w-14 rounded-full overflow-hidden border border-gold-600/30 group-hover:border-gold-500 flex items-center justify-center bg-dark-900 transition-all shadow-lg shadow-gold-600/10">
                 <span className="absolute text-[9px] text-gray-600 text-center leading-tight px-1 font-sans">Añadir logo.png en public/</span>
                 <img src="/logo.png?v=2" alt="Ortiz Abogado Logo" className="absolute inset-0 h-full w-full object-contain z-10 transition-transform group-hover:scale-105 bg-dark-900" onError={(e) => e.target.style.opacity = '0'} />
               </div>
               <div className="flex flex-col">
                 <span className="font-serif text-2xl font-bold tracking-wider text-white uppercase leading-tight">Ortiz Abogado</span>
-                <span className="text-gold-500 text-[11px] tracking-widest uppercase mt-0.5">Despacho Jurídico</span>
+                <span className="text-gold-500 text-[11px] tracking-widest uppercase mt-0.5">Despacho Jurídico en Sevilla</span>
               </div>
             </a>
           </div>
@@ -50,7 +50,7 @@ const Navigation = () => {
                 {link.name}
               </a>
             ))}
-            <a href="#contacto" className="btn-primary text-sm py-2 px-5">
+            <a href="/#contacto" className="btn-primary text-sm py-2 px-5">
               Consulta Gratuita
             </a>
           </div>
@@ -81,7 +81,7 @@ const Navigation = () => {
             </a>
           ))}
           <div className="pt-4 px-3">
-            <a href="#contacto" onClick={() => setIsMobileMenuOpen(false)} className="btn-primary block text-center w-full">
+            <a href="/#contacto" onClick={() => setIsMobileMenuOpen(false)} className="btn-primary block text-center w-full">
               Consulta Gratuita
             </a>
           </div>

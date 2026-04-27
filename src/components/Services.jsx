@@ -1,10 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Briefcase, Globe, Home, ArrowRight, Gavel, Scale } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
-    id: 'laboral',
+    id: 'derecho-laboral',
     title: 'Derecho Laboral',
     description: 'Nuestra especialidad principal. Defendemos los derechos de trabajadores y empresas. Despidos, reclamaciones de cantidad, acoso laboral y accidentes de trabajo.',
     icon: <Briefcase size={32} />,
@@ -20,7 +21,7 @@ const services = [
     featured: false,
   },
   {
-    id: 'civil',
+    id: 'derecho-civil',
     title: 'Derecho Civil y Familia',
     description: 'Divorcios, custodias, herencias, pensiones alimenticias, redacción de contratos e incapacitaciones. Resoluciones justas para tu vida personal.',
     icon: <Home size={32} />,
@@ -28,7 +29,7 @@ const services = [
     featured: false,
   },
   {
-    id: 'penal',
+    id: 'derecho-penal',
     title: 'Derecho Penal',
     description: 'Asistencia al detenido, juicios rápidos, alcoholemias, delitos económicos y defensa o acusación en todo tipo de procedimientos penales.',
     icon: <Gavel size={32} />,
@@ -78,9 +79,9 @@ const Services = () => {
             <p className="text-gray-300 text-lg mb-8 max-w-xl leading-relaxed">
               {services[0].description}
             </p>
-            <a href="#contacto" className="inline-flex items-center gap-2 text-gold-500 font-medium hover:text-gold-400 transition-colors w-max">
-              Consultar caso laboral <ArrowRight size={20} />
-            </a>
+            <Link to={`/servicios/${services[0].id}`} className="inline-flex items-center gap-2 text-gold-500 font-medium hover:text-gold-400 transition-colors w-max">
+              Más información <ArrowRight size={20} />
+            </Link>
           </div>
         </motion.div>
 
@@ -108,9 +109,9 @@ const Services = () => {
               <p className="text-gray-400 mb-6 text-sm flex-grow">
                 {service.description}
               </p>
-              <a href="#contacto" className="inline-flex items-center gap-2 text-sm text-gold-600 font-medium hover:text-gold-400 transition-colors mt-auto">
+              <Link to={`/servicios/${service.id}`} className="inline-flex items-center gap-2 text-sm text-gold-600 font-medium hover:text-gold-400 transition-colors mt-auto">
                 Más información <ArrowRight size={16} />
-              </a>
+              </Link>
             </div>
           </motion.div>
         ))}

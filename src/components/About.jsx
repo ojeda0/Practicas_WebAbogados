@@ -29,7 +29,7 @@ const About = () => {
           
           <div className="text-gray-300 space-y-6 text-lg leading-relaxed">
             <p>
-              En <strong className="text-gold-400 font-serif">Ortiz Abogado</strong>, entendemos que detrás de cada expediente hay una historia, una preocupación y un proyecto de vida. Nuestro despacho nació en Sevilla con la vocación de ofrecer un asesoramiento legal de primer nivel accesible a todos.
+              En <span className="text-gold-500 font-medium tracking-wide">Ortiz Abogado</span>, entendemos que detrás de cada expediente hay una historia, una preocupación y un proyecto de vida. Nuestro despacho nació en Sevilla con la vocación de ofrecer un asesoramiento legal de primer nivel accesible a todos.
             </p>
             <p>
               Nos distinguimos por nuestra combatividad en los tribunales y nuestra capacidad de mediación y negociación cuando es la vía más beneficiosa para nuestros clientes.

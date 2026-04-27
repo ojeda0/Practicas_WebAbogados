@@ -9,6 +9,16 @@
     <title>Ortiz Abogado | Despacho Jurídico en Sevilla</title>
   </head>
   <body>
+    <!-- Formulario oculto para que Netlify detecte el form en build-time -->
+    <form name="consulta" netlify netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="nombre" />
+      <input name="telefono" />
+      <input name="email" />
+      <input name="asunto" />
+      <textarea name="mensaje"></textarea>
+    </form>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

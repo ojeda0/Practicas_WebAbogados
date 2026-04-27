@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -16,7 +17,7 @@ const Footer = () => {
               </div>
               <div className="flex flex-col">
                 <span className="font-serif text-2xl font-bold tracking-wider text-white uppercase leading-tight">Ortiz Abogado</span>
-                <span className="text-gold-500 text-[11px] tracking-widest uppercase mt-0.5">Despacho Jurídico</span>
+                <span className="text-gold-500 text-[11px] tracking-widest uppercase mt-0.5">Despacho Jurídico en Sevilla</span>
               </div>
             </a>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
@@ -29,12 +30,14 @@ const Footer = () => {
               <a href="mailto:manuelortsanz@gmail.com" className="bg-dark-900 border border-dark-700 p-2 rounded-full text-gray-400 hover:text-gold-500 hover:border-gold-500/50 transition-all">
                 <Mail size={18} />
               </a>
+              <a href="tel:+34661528937" className="bg-dark-900 border border-dark-700 p-2 rounded-full text-gray-400 hover:text-gold-500 hover:border-gold-500/50 transition-all">
+                <Phone size={18} />
+              </a>
             </div>
           </div>
 
-          {/* Enlaces Rápidos */}
           <div className="lg:col-span-2">
-            <h5 className="text-white font-bold mb-6 font-serif tracking-wide">Navegación</h5>
+            <h5 className="text-sm font-bold font-sans text-white uppercase tracking-wider mb-6">Navegación</h5>
             <ul className="space-y-3">
               <li><a href="#inicio" className="text-gray-400 hover:text-gold-500 text-sm transition-colors flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-gold-600 flex-shrink-0"></div>Inicio</a></li>
               <li><a href="#servicios" className="text-gray-400 hover:text-gold-500 text-sm transition-colors flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-gold-600 flex-shrink-0"></div>Servicios</a></li>
@@ -45,9 +48,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Especialidades */}
           <div className="lg:col-span-3">
-            <h5 className="text-white font-bold mb-6 font-serif tracking-wide">Especialidades</h5>
+            <h5 className="text-sm font-bold font-sans text-white uppercase tracking-wider mb-6">Especialidades</h5>
             <ul className="space-y-3">
               <li><a href="#servicios" className="text-gray-400 text-sm flex items-center gap-2 hover:text-gold-500 transition-colors"><div className="w-1.5 h-1.5 rounded-full bg-gold-600 flex-shrink-0"></div>Derecho Laboral</a></li>
               <li><a href="#servicios" className="text-gray-400 text-sm flex items-center gap-2 hover:text-gold-500 transition-colors"><div className="w-1.5 h-1.5 rounded-full bg-gold-600 flex-shrink-0"></div>Extranjería e Inmigración</a></li>
@@ -56,17 +58,22 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contacto Directo */}
           <div className="lg:col-span-3">
-            <h5 className="text-white font-bold mb-6 font-serif tracking-wide">Despacho</h5>
-            <ul className="space-y-4">
+            <h5 className="text-sm font-bold font-sans text-white uppercase tracking-wider mb-6">Despacho</h5>
+            <ul className="space-y-6">
               <li className="flex items-start gap-3 text-sm text-gray-400">
                 <MapPin size={16} className="text-gold-600 mt-1 flex-shrink-0" />
-                <span>Avenida Eduardo Dato, 44<br/>41005 Sevilla, España</span>
+                <a href="https://www.google.com/maps/search/?api=1&query=Avenida+Eduardo+Dato+44+Sevilla,+España" target="_blank" rel="noopener noreferrer" className="hover:text-gold-500 transition-colors">
+                  Avenida Eduardo Dato, 44<br/>41005 Sevilla, España
+                </a>
               </li>
               <li className="flex items-center gap-3 text-sm text-gray-400">
                 <Mail size={16} className="text-gold-600 flex-shrink-0" />
                 <a href="mailto:manuelortsanz@gmail.com" className="hover:text-gold-500 transition-colors">manuelortsanz@gmail.com</a>
+              </li>
+              <li className="flex items-center gap-3 text-sm text-gray-400">
+                <Phone size={16} className="text-gold-600 flex-shrink-0" />
+                <a href="tel:+34661528937" className="hover:text-gold-500 transition-colors">+34 661 52 89 37</a>
               </li>
             </ul>
           </div>
@@ -77,10 +84,9 @@ const Footer = () => {
           <p className="text-gray-500 text-xs text-center md:text-left">
             &copy; {new Date().getFullYear()} Ortiz Abogado. Todos los derechos reservados.
           </p>
-          <div className="flex gap-4 text-xs text-gray-500">
-            <a href="#" className="hover:text-gold-500 transition-colors">Aviso Legal</a>
-            <a href="#" className="hover:text-gold-500 transition-colors">Política de Privacidad</a>
-            <a href="#" className="hover:text-gold-500 transition-colors">Cookies</a>
+          <div className="flex gap-6 text-xs text-gray-500">
+            <Link to="/privacidad" className="hover:text-gold-500 transition-colors">Política de Privacidad</Link>
+            <Link to="/terminos" className="hover:text-gold-500 transition-colors">Términos de Servicio</Link>
           </div>
         </div>
       </div>
