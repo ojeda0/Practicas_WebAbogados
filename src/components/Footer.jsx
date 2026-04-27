@@ -51,10 +51,10 @@ const Footer = () => {
           <div className="lg:col-span-3">
             <h5 className="text-sm font-bold font-sans text-white uppercase tracking-wider mb-6">Especialidades</h5>
             <ul className="space-y-3">
-              <li><a href="#servicios" className="text-gray-400 text-sm flex items-center gap-2 hover:text-gold-500 transition-colors"><div className="w-1.5 h-1.5 rounded-full bg-gold-600 flex-shrink-0"></div>Derecho Laboral</a></li>
-              <li><a href="#servicios" className="text-gray-400 text-sm flex items-center gap-2 hover:text-gold-500 transition-colors"><div className="w-1.5 h-1.5 rounded-full bg-gold-600 flex-shrink-0"></div>Extranjería e Inmigración</a></li>
-              <li><a href="#servicios" className="text-gray-400 text-sm flex items-center gap-2 hover:text-gold-500 transition-colors"><div className="w-1.5 h-1.5 rounded-full bg-gold-600 flex-shrink-0"></div>Derecho Civil y Familia</a></li>
-              <li><a href="#servicios" className="text-gray-400 text-sm flex items-center gap-2 hover:text-gold-500 transition-colors"><div className="w-1.5 h-1.5 rounded-full bg-gold-600 flex-shrink-0"></div>Derecho Penal</a></li>
+              <li><Link to="/servicios/derecho-laboral" className="text-gray-400 text-sm flex items-center gap-2 hover:text-gold-500 transition-colors"><div className="w-1.5 h-1.5 rounded-full bg-gold-600 flex-shrink-0"></div>Derecho Laboral</Link></li>
+              <li><Link to="/servicios/extranjeria" className="text-gray-400 text-sm flex items-center gap-2 hover:text-gold-500 transition-colors"><div className="w-1.5 h-1.5 rounded-full bg-gold-600 flex-shrink-0"></div>Extranjería e Inmigración</Link></li>
+              <li><Link to="/servicios/derecho-civil" className="text-gray-400 text-sm flex items-center gap-2 hover:text-gold-500 transition-colors"><div className="w-1.5 h-1.5 rounded-full bg-gold-600 flex-shrink-0"></div>Derecho Civil y Familia</Link></li>
+              <li><Link to="/servicios/derecho-penal" className="text-gray-400 text-sm flex items-center gap-2 hover:text-gold-500 transition-colors"><div className="w-1.5 h-1.5 rounded-full bg-gold-600 flex-shrink-0"></div>Derecho Penal</Link></li>
             </ul>
           </div>
 

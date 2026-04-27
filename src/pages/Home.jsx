@@ -26,6 +26,9 @@ const Home = () => {
 
   return (
     <>
+      <title>Ortiz Abogado | Despacho Jurídico en Sevilla</title>
+      <meta name="description" content="Despacho multidisciplinar en Sevilla. Especialistas en Derecho Laboral, Extranjería, Civil y Penal. Primera consulta gratuita. Defendemos tus derechos." />
+      <link rel="canonical" href="https://ortizabogado.es/" />
       <Hero />
       <Services />
       <About />

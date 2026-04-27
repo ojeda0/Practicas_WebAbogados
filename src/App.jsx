@@ -5,6 +5,7 @@ import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import ServicePage from './pages/ServicePage';
 import Footer from './components/Footer';
+import CookieConsent from './components/CookieConsent';
 
 const laboralSubservices = [
   {
@@ -282,16 +283,16 @@ function App() {
             <Route path="/servicios" element={<Navigate to="/#servicios" replace />} />
             
             {/* Rutas principales de servicios */}
-            <Route path="/servicios/derecho-laboral" element={<ServicePage title="Derecho Laboral" description={descLaboral} subServices={laboralSubservices} basePath="/servicios/derecho-laboral" headerImage="/bg_laboral.png" />} />
-            <Route path="/servicios/extranjeria" element={<ServicePage title="Extranjería e Inmigración" description={descExtranjeria} subServices={extranjeriaSubservices} basePath="/servicios/extranjeria" headerImage="/bg_extranjeria.png" />} />
-            <Route path="/servicios/derecho-civil" element={<ServicePage title="Derecho Civil y Familia" description={descCivil} headerImage="/bg_civil.png" />} />
-            <Route path="/servicios/derecho-penal" element={<ServicePage title="Derecho Penal" description={descPenal} headerImage="/bg_penal.png" />} />
+            <Route path="/servicios/derecho-laboral" element={<ServicePage title="Derecho Laboral" description={descLaboral} subServices={laboralSubservices} basePath="/servicios/derecho-laboral" headerImage="/bg_laboral.png" showBackBtn={true} />} />
+            <Route path="/servicios/extranjeria" element={<ServicePage title="Extranjería e Inmigración" description={descExtranjeria} subServices={extranjeriaSubservices} basePath="/servicios/extranjeria" headerImage="/bg_extranjeria.png" showBackBtn={true} />} />
+            <Route path="/servicios/derecho-civil" element={<ServicePage title="Derecho Civil y Familia" description={descCivil} headerImage="/bg_civil.png" showBackBtn={true} />} />
+            <Route path="/servicios/derecho-penal" element={<ServicePage title="Derecho Penal" description={descPenal} headerImage="/bg_penal.png" showBackBtn={true} />} />
 
             {/* Sub-rutas (Páginas individuales) */}
-            <Route path="/servicios/derecho-laboral/despido-sin-permiso-de-trabajo" element={<ServicePage title="Despido sin permiso de trabajo" description={descDespidoSinPermiso} headerImage="/bg_despido.png" />} />
-            <Route path="/servicios/extranjeria/despido-sin-permiso-de-trabajo" element={<ServicePage title="Despido sin permiso de trabajo" description={descDespidoSinPermiso} headerImage="/bg_despido.png" />} />
-            <Route path="/servicios/extranjeria/regularizacion-extraordinaria" element={<ServicePage title="Regularización extraordinaria" description={descRegularizacionExtraordinaria} headerImage="/bg_regularizacion.png" />} />
-            <Route path="/servicios/extranjeria/arraigos" element={<ServicePage title="Arraigos: sociolaboral, socioformativo, social y segunda oportunidad" description={descArraigos} headerImage="/bg_arraigos.png" />} />
+            <Route path="/servicios/derecho-laboral/despido-sin-permiso-de-trabajo" element={<ServicePage title="Despido sin permiso de trabajo" description={descDespidoSinPermiso} headerImage="/bg_despido.png" showBackBtn={true} />} />
+            <Route path="/servicios/extranjeria/despido-sin-permiso-de-trabajo" element={<ServicePage title="Despido sin permiso de trabajo" description={descDespidoSinPermiso} headerImage="/bg_despido.png" showBackBtn={true} />} />
+            <Route path="/servicios/extranjeria/regularizacion-extraordinaria" element={<ServicePage title="Regularización extraordinaria" description={descRegularizacionExtraordinaria} headerImage="/bg_regularizacion.png" showBackBtn={true} />} />
+            <Route path="/servicios/extranjeria/arraigos" element={<ServicePage title="Arraigos: sociolaboral, socioformativo, social y segunda oportunidad" description={descArraigos} headerImage="/bg_arraigos.png" showBackBtn={true} />} />
 
             {/* Páginas Legales */}
             <Route path="/privacidad" element={<ServicePage title="Política de Privacidad" description={descPrivacidad} headerImage="/bg_legal.png" showBackBtn={true} />} />
@@ -299,6 +300,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <CookieConsent />
       </div>
     </Router>
   );

@@ -10,6 +10,11 @@ const ServicePage = ({ title, description, subServices, basePath, headerImage, s
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
+  // Actualizar título de la pestaña del navegador
+  useEffect(() => {
+    document.title = `${title} | Ortiz Abogado en Sevilla`;
+  }, [title]);
+
   return (
     <div className="min-h-screen bg-dark-950 flex flex-col items-center pb-24">
       

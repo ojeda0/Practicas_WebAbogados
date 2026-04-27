@@ -47,7 +47,7 @@ const Hero = () => {
             <div className="mt-12 grid grid-cols-3 gap-4 pt-8 border-t border-dark-800">
               <div className="flex flex-col items-center lg:items-start">
                 <span className="text-2xl font-sans font-bold text-white tracking-tight mb-1">2<span className="text-gold-500 ml-1.5">+</span></span>
-                <span className="text-[10px] text-gray-400 font-bold tracking-widest uppercase mt-1">Años Experiencia</span>
+                <span className="text-[10px] text-gray-400 font-bold tracking-widest uppercase mt-1">Años de Experiencia</span>
               </div>
               <div className="flex flex-col items-center lg:items-start">
                 <span className="text-2xl font-sans font-bold text-white tracking-tight mb-1">98<span className="text-gold-500 ml-1.5">%</span></span>
@@ -55,7 +55,7 @@ const Hero = () => {
               </div>
               <div className="flex flex-col items-center lg:items-start">
                 <span className="text-2xl font-sans font-bold text-white tracking-tight mb-1">24<span className="text-gold-500 mx-1.5">/</span>7</span>
-                <span className="text-[10px] text-gray-400 font-bold tracking-widest uppercase mt-1">Atención Cliente</span>
+                <span className="text-[10px] text-gray-400 font-bold tracking-widest uppercase mt-1">Atención al Cliente</span>
               </div>
             </div>
           </motion.div>
