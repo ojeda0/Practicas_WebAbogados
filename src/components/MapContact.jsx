@@ -61,13 +61,13 @@ const MapContact = () => {
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="flex flex-col items-center justify-center text-center py-16 space-y-6"
+              className="flex flex-col items-center justify-center text-center py-44 space-y-8"
             >
-              <div className="bg-green-500/10 p-5 rounded-full">
-                <CheckCircle size={48} className="text-green-400" />
+              <div className="bg-green-500/10 p-7 rounded-full">
+                <CheckCircle size={64} className="text-green-400" />
               </div>
-              <h5 className="text-2xl font-serif text-white">¡Consulta enviada!</h5>
-              <p className="text-gray-400 max-w-sm">
+              <h5 className="text-3xl font-serif text-white">¡Consulta enviada!</h5>
+              <p className="text-gray-400 text-lg max-w-md leading-relaxed">
                 Hemos recibido tu mensaje correctamente. Nos pondremos en contacto contigo lo antes posible.
               </p>
               <button
@@ -134,7 +134,7 @@ const MapContact = () => {
               )}
 
               <p className="text-xs text-center text-gray-500 mt-4">
-                Al enviar este formulario aceptas nuestra <a href="/privacidad" className="text-gold-500 hover:text-gold-400 transition-colors underline">política de privacidad</a> y protección de datos.
+                Al enviar este formulario aceptas nuestra <a href="/privacidad" className="text-gold-500 hover:text-gold-400 transition-colors underline">política de privacidad</a> y nuestros <a href="/terminos" className="text-gold-500 hover:text-gold-400 transition-colors underline">términos de servicio</a>.
               </p>
             </form>
           )}
